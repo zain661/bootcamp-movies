@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(2, 15, 50);
+}
+
+#container{
+    padding: 20px;
+}
+
+#movieType{
+    width: 85%;
+    height: 25px;
+}
+
+button{
+    width: 14%;
+    height: 30px;
+}
+
+.head{
+    padding-bottom: 20px;
+}
+
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-areas: "m""m""m";
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.headerMovie{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+}
+
+#linkMovie{
+    color: black;
+}
+
+.containerMovie{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+    padding: 35px;
+    margin: 50px;
+    grid-area: 'm';
+    background-color: rgb(46, 4, 135);
+    text-align:center;
+    
+}
+
+#movieImage{
+    
+    width: 90%;
+}
+
+li{
+    margin-right: 152px;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script id="movie-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div data-id="{{id}}" class="containerMovie">
+        <h2 class="headerMovie" ><a href="" id="linkMovie"> {{title}} </a></h2>
+        <img id="movieImage" src="{{poster}}" >
+        <p>Year: {{year}}</p>
+        <ul class="ratingsList">
+           </ul>
+        </div>
+        {{/each}}
+        </script>
+        <div class="container">
+            <div class="head">
+               <input type="text" id="movieType" placeholder="search for a movie">
+               <button onclick="fetchMovieData()">Search!</button>
+            </div> 
+            <div class="main">
+
+            </div> 
+        </div>
+     
+    <script src="./handlebars/dist/handlebars.min.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
